@@ -2,8 +2,13 @@
 # docker build -t budgetman-webapp:1.0.0 .
 # $> docker build -t luserrano/budgetman-frontend:1.1.0 .
 # $> docker build -t luserrano/budgetman-frontend:1.2.0 .
+# ---------------------
+# GCP version
+# docker build -t luserrano/budgetman-frontend:1.2.0-gcp .
 # Runing
 # docker run -d -p 8888:80 budgetman-webapp:1.0.0
+#------ original values -------
+# ENV REACT_APP_BACK_END_BASE_URL=http://localhost:8500/
 
 
 ## FIRST PHASE
@@ -11,7 +16,7 @@ FROM node:18.13.0-alpine3.17 as compilation
 
 LABEL developer="Luis E. Serrano"
 
-ENV REACT_APP_BACK_END_BASE_URL=http://localhost:8500/
+ENV REACT_APP_BACK_END_BASE_URL=http://35.192.98.182:8500/
 
 COPY . /opt/budgetmanapp
 
