@@ -1,0 +1,51 @@
+docker run -e ORACLE_USER=budgetman -e ORACLE_PASS=budgetman -e ORACLE_CONNSTR=172.17.0.2:1522/xepdb1 budgetman-backend:1.0.0
+
+
+docker run -e ORACLE_USER=appuser -e ORACLE_PASS=<your_pass> -e ORACLE_CONNSTR=<db_host>:1521/xepdb1 -d -p 3800:3800 mybackend:0.1.0
+
+
+
+docker run -e ORACLE_USER=budgetman -e ORACLE_PASS=budgetman -e ORACLE_CONNSTR=172.17.0.2:1522/xepdb1 -d -p 3800:3800 budgetman-backend:1.0.0
+
+
+docker run -e ORACLE_USER=budgetman -e ORACLE_PASS=budgetman -e ORACLE_CONNSTR=172.17.0.2:1521/XEPDB1 -p 8500:8500 budgetman-backend:1.0.0
+
+docker run -e ORACLE_USER=budgetman -e ORACLE_PASS=budgetman -e ORACLE_CONNSTR=172.17.0.2:1522/XEPDB1 -p 3800:3800 budgetman-backend:1.0.0
+
+
+
+docker run -p 8500:8500 budgetman-backend:1.0.0
+
+
+------------------ Kubernetes ----------------------
+kubectl get po -A
+kubectl get nodes
+
+-- Crear el deployement 
+kubectl create deployment hello-minikube --image=kicbase/echo-server:1.0
+
+-- Exponer lo en la red
+kubectl expose deployment hello-minikube --type=NodePort --port=8080
+kubectl expose deployment hello-minikube --type=LoadBalancer --port=8080
+kubectl expose deployment hello-minikube --name=mytestservice --type=ClusterIP --port=8080
+
+--Inspeccionar tipos de servicios y otra informacion
+kubectl get services
+
+-- Eliminar 
+kubectl delete service hello-minikube
+
+-- obtener la IP interna del pod
+kubectl get po -o wide
+
+
+kubectl expose deployment hello-minikube --type=LoadBalancer --port=8080
+
+--- Create pod
+kubectl apply -f .\test-pod.yml
+kubectl get pods
+
+--- Create deployment
+kubectl apply -f .\test-deployment.yml
+kubectl get deployments
+

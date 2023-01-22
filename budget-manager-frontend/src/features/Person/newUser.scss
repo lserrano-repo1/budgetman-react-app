@@ -1,0 +1,38 @@
+.field-item {
+    padding:4px 6px !important;
+    //width: 500px !important;
+}
+
+.login-form-container{
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px !important;
+    margin-bottom:40px !important;
+}
+
+.buttons-styles {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px !important;
+    margin-bottom:20px !important;
+}
+
+.submit-button {
+    margin-top: 40px !important;
+    margin-right: 5px !important;
+    margin-left:  5px !important;
+    margin-bottom: 24px !important;
+    border: 2px solid #094b0f !important;
+    width: 100%;
+}
+
+.cancel-button {
+    margin-top: 40px !important;
+    margin-right: 5px !important;
+    margin-left:  5px !important;
+    margin-bottom: 24px !important;
+    border: 2px solid #a3290a !important;
+    width: 100%;
+}

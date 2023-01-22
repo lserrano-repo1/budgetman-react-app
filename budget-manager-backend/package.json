@@ -1,0 +1,32 @@
+{
+  "name": "budget-manager-backend",
+  "version": "1.0.0",
+  "description": "(Core Code upskilling) Luis Serrano's Budget Manager, backend project.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lserrano-repo1/budget-manager-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lserrano-repo1/budget-manager-backend/issues"
+  },
+  "homepage": "https://github.com/lserrano-repo1/budget-manager-backend#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "oracledb": "^5.5.0"
+  }
+}

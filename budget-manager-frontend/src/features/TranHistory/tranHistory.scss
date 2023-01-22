@@ -1,0 +1,29 @@
+.data-container{
+    display: flex !important;
+    justify-content: space-evenly !important;
+}
+
+
+.filters-form-container{
+    display: flex !important;
+    flex-flow: row!important;
+    align-items: center !important;
+    margin-bottom: 30px !important;
+    margin-top: 20px !important;
+    background-color: aliceblue;
+    padding: 10px !important;
+}
+
+
+.data-form-container{
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px !important;
+    margin-bottom:80px !important;
+}
+
+.data-form-row {
+    display: flex !important;
+    justify-content: space-evenly !important;
+}
