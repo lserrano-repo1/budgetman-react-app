@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: luserrano/budgetman-backend:1.0.0
+        image: luserrano/budgetman-backend:1.2.0
         env:
           - name: DB_USER
             value: budgetman

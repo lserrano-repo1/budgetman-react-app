@@ -1,6 +1,7 @@
 #Building process
 # docker build -t budgetman-webapp:1.0.0 .
 # $> docker build -t luserrano/budgetman-frontend:1.1.0 .
+# $> docker build -t luserrano/budgetman-frontend:1.2.0 .
 # Runing
 # docker run -d -p 8888:80 budgetman-webapp:1.0.0
 

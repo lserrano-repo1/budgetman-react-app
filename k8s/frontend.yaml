@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: luserrano/budgetman-frontend:1.0.0
+        image: luserrano/budgetman-frontend:1.2.0
         resources:
           limits:
             memory: "128Mi"

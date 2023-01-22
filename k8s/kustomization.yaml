@@ -1,0 +1,7 @@
+namespace: budgetman-react-web-app
+
+resources:
+  - database.yaml
+  - backend.yaml
+  - frontend.yaml
+  - namespace.yaml

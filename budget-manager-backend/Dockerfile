@@ -1,6 +1,7 @@
 # BUILD sequence
 # $> docker build -t budgetman-backend:1.0.0 .
 # $> docker build -t luserrano/budgetman-backend:1.1.0 .
+# $> docker build -t luserrano/budgetman-backend:1.2.0 .
 # Running 
 # $>  docker run -p 8500:8500 budgetman-backend:1.0.0
 
